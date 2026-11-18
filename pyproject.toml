@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bracket-validator-purih"
+version = "0.1.0"
+description = "Валідатор балансу дужок (), {}, <> у строці"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Purih" }]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+
+[project.scripts]
+bracket-validator = "bracket_validator:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
